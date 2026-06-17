@@ -1,0 +1,3 @@
+# Cloudflare Pages / Netlify redirect fallback.
+# Unknown routes serve index.html so deep links and refreshes don't 404.
+/*    /index.html   200

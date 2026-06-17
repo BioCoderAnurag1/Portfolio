@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional Biotechnology and Bioinformatics portfolio of Anurag Chauhan. B.Tech student at NIET, specializing in protein structure prediction, molecular docking, and computational biology.">
+<meta name="keywords" content="Anurag Chauhan, Biotechnology, Bioinformatics, Computational Biology, NIET, AlphaFold, Molecular Docking, Protein Structure, AI in Biotech">
+<meta name="author" content="Anurag Chauhan">
+<title>Anurag Chauhan | Biotechnology & Bioinformatics Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="blob-container" hidden>
+    <div class="glowing-blob blob-pink" id="blob1"></div>
+    <div class="glowing-blob blob-purple" id="blob2"></div>
+    <div class="glowing-blob blob-blue" id="blob3"></div>
+    <div class="glowing-blob blob-orange" id="blob4"></div>
+</div>
+
+<main class="portfolio-container" id="main-container">
+<!-- Sidebar -->
+<aside class="sidebar-panel glass-card" data-blur>
+    <div class="profile-header">
+        <div class="avatar-wrapper">
+            <img src="assets/avatar.jpg" alt="Anurag Chauhan - Biotechnology and Bioinformatics Profile" class="avatar-img" id="profile-avatar">
+            <div class="avatar-glow"></div>
+        </div>
+        <h1 class="profile-name">Anurag Chauhan</h1>
+        <p class="profile-title">B.Tech Biotechnology Student</p>
+        <p class="profile-subtitle">Noida Institute of Engineering and Technology</p>
+        <div class="profile-status"><span class="status-dot"></span><span>Open to research &amp; internship opportunities</span></div>
+    </div>
+
+    <div class="info-section">
+        <h2 class="section-title-sm"><i data-lucide="contact"></i> Contact Details</h2>
+        <ul class="contact-list">
+            <li>
+                <a href="mailto:chauhananurag940@gmail.com" class="contact-link icon-link" id="email-link" data-toggle="email" data-reveal>
+                    <span class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z" fill="#F2F2F2"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v1.5l10 6.25L22 7.5V6z" fill="#EA4335"/><path d="M2 7.5V18c0 1.1.9 2 2 2h4v-8l-6-4z" fill="#4285F4"/><path d="M22 7.5V18c0 1.1-.9 2-2 2h-4v-8l6-4z" fill="#34A853"/><path d="M8 20h8v-8H8v8z" fill="#FBBC05"/></svg>
+                    </span>
+                    <span class="contact-text" data-hidden>••••••••••••@gmail.com</span>
+                    <span class="contact-text" data-revealed>chauhananurag940@gmail.com</span>
+                    <span class="reveal-badge" title="Click to reveal"><i data-lucide="eye"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="tel:+917409822340" class="contact-link icon-link" id="phone-link" data-toggle="phone" data-reveal>
+                    <span class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="12" fill="#22c55e"/><path d="M17.5 14.77c-.76.76-1.95.73-2.92-.1l-1.17-1.01c-.49-.42-.51-1.16-.06-1.61l.4-.4c.12-.12.14-.3.06-.45-.48-1.01-1.24-1.78-2.25-2.26-.15-.07-.33-.05-.45.07l-.4.4c-.45.45-1.19.43-1.61-.06L8 8.18c-.83-.97-.86-2.16-.1-2.92l.74-.74c.45-.45 1.18-.45 1.63 0l1.29 1.29c.45.45.45 1.18 0 1.63l-.32.32c-.11.11-.13.29-.04.42.42.59 1.02 1.19 1.61 1.61.13.09.31.07.42-.04l.32-.32c.45-.45 1.18-.45 1.63 0l1.29 1.29c.45.45.45 1.18 0 1.63l-.74.74z" fill="#FFFFFF"/></svg>
+                    </span>
+                    <span class="contact-text" data-hidden>+91 ••••• ••••0</span>
+                    <span class="contact-text" data-revealed>+91 7409822340</span>
+                    <span class="reveal-badge" title="Click to reveal"><i data-lucide="eye"></i></span>
+                </a>
+            </li>
+            <li>
+                <div class="contact-link">
+                    <span class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M19.5 9.5c0-4.14-3.36-7.5-7.5-7.5S4.5 5.36 4.5 9.5c0 3.7 6.13 11.23 7.02 12.28a.625.625 0 0 0 .96 0c.89-1.05 7.02-8.58 7.02-12.28z" fill="#34A853"/><path d="M12 2.05c2.4 0 4.6.9 6.2 2.4l-5.9 7.7a.625.625 0 0 1-.6.25v-10.35z" fill="#4285F4"/><path d="M12 2.05v10.35a.625.625 0 0 1-.6-.25L5.5 4.45c1.6-1.5 3.8-2.4 6.5-2.4z" fill="#EA4335"/><path d="M12 22c-.17 0-.33-.07-.45-.18C10.74 20.93 5.5 14.53 5.5 9.5c0-1.9 0-3.2 0-3.2l6.5 7.8V22z" fill="#FBBC05"/><circle cx="12" cy="9.5" r="3" fill="#FFFFFF"/></svg>
+                    </span>
+                    <span class="contact-text">Greater Noida, UP, India</span>
+                </div>
+            </li>
+            <li>
+                <a href="https://github.com/BioCoderAnurag1" target="_blank" rel="noopener noreferrer" class="contact-link social-link github-link" id="github-link" aria-label="GitHub profile of Anurag Chauhan">
+                    <span class="social-icon github-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </span>
+                    <span class="contact-text social-handle">@BioCoderAnurag1</span>
+                    <span class="external-badge"><i data-lucide="external-link"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tinyurl.com/ejdbrr39" target="_blank" rel="noopener noreferrer" class="contact-link social-link linkedin-link" id="linkedin-link" aria-label="LinkedIn profile of Anurag Chauhan">
+                    <span class="social-icon linkedin-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </span>
+                    <span class="contact-text social-handle">Anurag Chauhan</span>
+                    <span class="external-badge"><i data-lucide="external-link"></i></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2 class="section-title-sm"><i data-lucide="graduation-cap"></i> Education</h2>
+        <div class="education-card">
+            <h3 class="edu-degree">B.Tech – Biotechnology</h3>
+            <p class="edu-school">Noida Institute of Engineering and Technology (NIET)</p>
+            <p class="edu-duration"><i data-lucide="calendar" class="inline-icon"></i> 2024 – 2028</p>
+        </div>
+    </div>
+</aside>
+
+<!-- Main Content -->
+<section class="main-panel">
+<header class="glass-navbar" data-blur>
+    <nav class="nav-links">
+        <a href="#about" class="nav-link active" id="nav-about"><i data-lucide="user"></i> About</a>
+        <a href="#interests" class="nav-link" id="nav-interests"><i data-lucide="binary"></i> Research</a>
+        <a href="#attributes" class="nav-link" id="nav-attributes"><i data-lucide="award"></i> Attributes</a>
+        <a href="#projects" class="nav-link" id="nav-projects"><i data-lucide="folder-git2"></i> Projects</a>
+        <a href="#skills" class="nav-link" id="nav-skills"><i data-lucide="cpu"></i> Skills</a>
+        <a href="#achievements" class="nav-link" id="nav-achievements"><i data-lucide="trophy"></i> Activities</a>
+    </nav>
+</header>
+
+<div class="scroll-content">
+<!-- About -->
+<article id="about" class="content-section active-section">
+    <div class="glass-card section-card">
+        <h2 class="section-title"><i data-lucide="info"></i> Career Objective &amp; Summary</h2>
+        <p class="career-objective-text"><strong>Career Objective:</strong> To build a career in Biotechnology and Bioinformatics by applying computational and biological sciences to drug discovery, genomics, precision medicine, and healthcare innovation while contributing to impactful research and technological advancement.</p>
+        <div class="summary-divider"></div>
+        <p class="section-desc">First-year B.Tech Biotechnology student at Noida Institute of Engineering and Technology with a strong interest in Bioinformatics, Computational Biology, Drug Discovery, Molecular Biology, and Artificial Intelligence applications in Biotechnology. Skilled in biological data analysis, protein structure prediction, molecular docking, genome databases, and scientific research methodologies.</p>
+        <p class="section-desc">Experienced in working with bioinformatics tools such as UniProt, AlphaFold, Swiss-Model, STRING Database, PyMOL, AutoDock Vina, and NCBI resources. Passionate about integrating biotechnology with machine learning to solve challenges in healthcare, drug development, genomics, and precision medicine.</p>
+    </div>
+</article>
+
+<!-- Research Interests -->
+<article id="interests" class="content-section">
+    <h2 class="section-title pad-left"><i data-lucide="compass"></i> Research Interests</h2>
+    <div class="interests-grid">
+        <div class="glass-card interest-card">
+            <div class="interest-icon-wrapper purple-glow"><i data-lucide="dna"></i></div>
+            <h3 class="interest-name">Bioinformatics</h3>
+            <ul class="interest-list"><li>Protein sequence analysis</li><li>Functional annotation</li><li>Gene ontology analysis</li><li>Biological database mining</li></ul>
+        </div>
+        <div class="glass-card interest-card">
+            <div class="interest-icon-wrapper blue-glow"><i data-lucide="box"></i></div>
+            <h3 class="interest-name">Structural Bioinformatics</h3>
+            <ul class="interest-list"><li>Protein structure prediction</li><li>Homology modeling</li><li>Structural validation</li><li>Protein visualization</li></ul>
+        </div>
+        <div class="glass-card interest-card">
+            <div class="interest-icon-wrapper pink-glow"><i data-lucide="activity"></i></div>
+            <h3 class="interest-name">Drug Discovery</h3>
+            <ul class="interest-list"><li>Molecular docking simulations</li><li>Virtual screening of libraries</li><li>Drug-target interactions</li><li>Lead compound identification</li></ul>
+        </div>
+        <div class="glass-card interest-card">
+            <div class="interest-icon-wrapper orange-glow"><i data-lucide="brain-circuit"></i></div>
+            <h3 class="interest-name">AI in Biotechnology</h3>
+            <ul class="interest-list"><li>Disease prediction models</li><li>Biological data analysis</li><li>Machine learning in healthcare</li><li>Computational genomics</li></ul>
+        </div>
+    </div>
+</article>
+
+<!-- Core Attributes (moved from sidebar) -->
+<article id="attributes" class="content-section">
+    <h2 class="section-title pad-left"><i data-lucide="award"></i> Core Attributes</h2>
+    <p class="section-desc">The mindset and competencies I bring to research, collaboration, and problem-solving in biotechnology and beyond.</p>
+    <div class="attributes-grid">
+        <div class="glass-card attribute-card">
+            <div class="attribute-icon-wrap"><i data-lucide="brain"></i></div>
+            <h3 class="attribute-name">Analytical Thinking</h3>
+            <p class="attribute-desc">Breaking down complex biological and computational problems into structured, testable components.</p>
+        </div>
+        <div class="glass-card attribute-card">
+            <div class="attribute-icon-wrap"><i data-lucide="puzzle"></i></div>
+            <h3 class="attribute-name">Problem Solving</h3>
+            <p class="attribute-desc">Applying iterative reasoning to identify root causes and craft efficient, evidence-based solutions.</p>
+        </div>
+        <div class="glass-card attribute-card">
+            <div class="attribute-icon-wrap"><i data-lucide="flask-conical"></i></div>
+            <h3 class="attribute-name">Research Aptitude</h3>
+            <p class="attribute-desc">Curious, methodical, and comfortable navigating scientific literature, databases, and lab workflows.</p>
+        </div>
+        <div class="glass-card attribute-card">
+            <div class="attribute-icon-wrap"><i data-lucide="scale"></i></div>
+            <h3 class="attribute-name">Critical Thinking</h3>
+            <p class="attribute-desc">Evaluating evidence carefully, questioning assumptions, and making reasoned scientific judgements.</p>
+        </div>
+        <div class="glass-card attribute-card">
+            <div class="attribute-icon-wrap"><i data-lucide="users"></i></div>
+            <h3 class="attribute-name">Team Collaboration</h3>
+            <p class="attribute-desc">Communicating clearly, sharing context, and contributing effectively within multidisciplinary teams.</p>
+        </div>
+        <div class="glass-card attribute-card">
+            <div class="attribute-icon-wrap"><i data-lucide="message-square"></i></div>
+            <h3 class="attribute-name">Communication</h3>
+            <p class="attribute-desc">Translating technical findings into clear reports, presentations, and discussions for varied audiences.</p>
+        </div>
+    </div>
+</article>
+
+<!-- Profile Highlights -->
+<article id="profile" class="content-section">
+    <h2 class="section-title pad-left"><i data-lucide="user-round"></i> About &amp; Profile Highlights</h2>
+    <p class="section-desc">A snapshot of the mindset, skills, and interests that shape how I approach biotechnology, research, and emerging technologies.</p>
+    <div class="about-tag-cloud">
+        <div class="about-tag-group">
+            <h3 class="about-tag-group-title">Research &amp; Domain</h3>
+            <ul class="about-tag-list">
+                <li class="about-tag">Bioinformatics &amp; computational biology</li>
+                <li class="about-tag">DNA sequencing &amp; genomics applications</li>
+                <li class="about-tag">Molecular biology fundamentals</li>
+                <li class="about-tag">Bioinformatics workflows &amp; molecular modeling</li>
+                <li class="about-tag">Scientific data analysis &amp; documentation</li>
+                <li class="about-tag">Biotechnology fundamentals</li>
+            </ul>
+        </div>
+        <div class="about-tag-group">
+            <h3 class="about-tag-group-title">Technical &amp; Tools</h3>
+            <ul class="about-tag-list">
+                <li class="about-tag">AI-powered tools for biotech &amp; healthcare</li>
+                <li class="about-tag">Biology × modern computational technologies</li>
+                <li class="about-tag">Digital content creation &amp; visual storytelling</li>
+                <li class="about-tag">Video editing for science communication</li>
+                <li class="about-tag">Quick learner — adapts to new tools &amp; platforms</li>
+            </ul>
+        </div>
+        <div class="about-tag-group">
+            <h3 class="about-tag-group-title">Mindset &amp; Approach</h3>
+            <ul class="about-tag-list">
+                <li class="about-tag">Analytical, detail-oriented problem solver</li>
+                <li class="about-tag">Curiosity-driven, creative, committed to excellence</li>
+                <li class="about-tag">Accuracy &amp; scientific integrity</li>
+                <li class="about-tag">Transforms ideas into scalable solutions</li>
+                <li class="about-tag">Continuous learning &amp; industry alignment</li>
+            </ul>
+        </div>
+        <div class="about-tag-group">
+            <h3 class="about-tag-group-title">Communication &amp; Future Focus</h3>
+            <ul class="about-tag-list">
+                <li class="about-tag">Professional reports, presentations &amp; documentation</li>
+                <li class="about-tag">Strong communication &amp; collaboration</li>
+                <li class="about-tag">Academic project &amp; research experience</li>
+                <li class="about-tag">Motivated by meaningful, real-world impact</li>
+                <li class="about-tag">Future at the intersection of biotech, innovation &amp; technology</li>
+            </ul>
+        </div>
+    </div>
+</article>
+
+<!-- Projects -->
+<article id="projects" class="content-section">
+    <div class="section-header-row">
+        <h2 class="section-title pad-left"><i data-lucide="folder-kanban"></i> Academic Projects</h2>
+        <div class="interactive-tag">Interactive Preview</div>
+    </div>
+    <div class="projects-grid">
+        <div class="glass-card project-card" id="project-protein">
+            <div class="project-header">
+                <div class="project-title-area">
+                    <span class="project-badge">Bioinformatics</span>
+                    <h3 class="project-name">Protein Structure Prediction &amp; Analysis</h3>
+                </div>
+                <div class="project-tools">
+                    <span class="tool-badge">UniProt</span><span class="tool-badge">AlphaFold</span>
+                    <span class="tool-badge">Swiss-Model</span><span class="tool-badge">PyMOL</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <ul class="project-details">
+                    <li>Retrieved raw amino acid sequences from the <strong>UniProt</strong> database.</li>
+                    <li>Predicted high-confidence 3D structures using deep-learning predictions via <strong>AlphaFold</strong>.</li>
+                    <li>Generated homology structures using template alignments in <strong>Swiss-Model</strong>.</li>
+                    <li>Visualized, rendered, and analyzed overlapping protein structures within <strong>PyMOL</strong>.</li>
+                    <li>Compared predicted structures against homology models to assess structural alignment and RMSD differences.</li>
+                </ul>
+                <div class="project-visual">
+                    <canvas id="protein-canvas" class="mini-canvas"></canvas>
+                    <div class="canvas-overlay"><span>Interactive AlphaFold Simulation (Move Mouse)</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card project-card" id="project-interaction">
+            <div class="project-header">
+                <div class="project-title-area">
+                    <span class="project-badge">Network Biology</span>
+                    <h3 class="project-name">Protein–Protein Interaction Network Analysis</h3>
+                </div>
+                <div class="project-tools">
+                    <span class="tool-badge">STRING Database</span><span class="tool-badge">Network Biology</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <ul class="project-details">
+                    <li>Investigated biological interaction networks for target disease pathways.</li>
+                    <li>Identified functional associations, physical interactions, and co-expression profiles using the <strong>STRING Database</strong>.</li>
+                    <li>Studied cellular signaling pathways and high-density interaction clusters.</li>
+                    <li>Analyzed biological processes and molecular functions via graphical network visualizers.</li>
+                </ul>
+                <div class="project-visual">
+                    <canvas id="network-canvas" class="mini-canvas"></canvas>
+                    <div class="canvas-overlay"><span>STRING Network Visualizer</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card project-card" id="project-docking">
+            <div class="project-header">
+                <div class="project-title-area">
+                    <span class="project-badge">Computational Drug Discovery</span>
+                    <h3 class="project-name">Molecular Docking Study</h3>
+                </div>
+                <div class="project-tools">
+                    <span class="tool-badge">AutoDock Vina</span><span class="tool-badge">PyMOL</span><span class="tool-badge">MGLTools</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <ul class="project-details">
+                    <li>Prepared protein target receptors and small-molecule chemical ligands (charge addition, atom-typing).</li>
+                    <li>Configured search space coordinate grids and binding pocket boxes.</li>
+                    <li>Executed docking simulations utilizing the search algorithms of <strong>AutoDock Vina</strong>.</li>
+                    <li>Evaluated binding affinity scores (kcal/mol) and parsed various binding conformations.</li>
+                    <li>Visualized ligand-receptor hydrogen bonding patterns and hydrophobic interactions in <strong>PyMOL</strong>.</li>
+                </ul>
+                <div class="project-visual">
+                    <canvas id="docking-canvas" class="mini-canvas"></canvas>
+                    <div class="canvas-overlay"><span>Ligand-Receptor Docking Simulation</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card project-card" id="project-go">
+            <div class="project-header">
+                <div class="project-title-area">
+                    <span class="project-badge">Functional Genomics</span>
+                    <h3 class="project-name">Gene Ontology &amp; Functional Annotation</h3>
+                </div>
+                <div class="project-tools">
+                    <span class="tool-badge">Gene Ontology DB</span><span class="tool-badge">UniProt</span><span class="tool-badge">Enrichment</span>
+                </div>
+            </div>
+            <div class="project-body">
+                <ul class="project-details">
+                    <li>Classified target protein sequences across three primary divisions:
+                        <ul><li><strong>Biological Process</strong> (cellular pathways)</li><li><strong>Molecular Function</strong> (biochemical actions)</li><li><strong>Cellular Component</strong> (subcellular localization)</li></ul>
+                    </li>
+                    <li>Performed functional enrichment analysis on differential gene lists.</li>
+                    <li>Interpreted physiological significance and pathway impacts of selected study proteins.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Skills -->
+<article id="skills" class="content-section">
+    <h2 class="section-title pad-left"><i data-lucide="terminal"></i> Technical Skills</h2>
+    <div class="skills-container">
+        <div class="glass-card skill-category-card">
+            <h3 class="category-name"><i data-lucide="binary" class="category-icon"></i> Computational &amp; Bioinformatics</h3>
+            <div class="skill-item-group">
+                <div class="skill-label-row"><span>Bioinformatics Tools</span><span class="percent-label">Advanced Tools</span></div>
+                <div class="tool-tag-list">
+                    <span class="tool-item">UniProt</span><span class="tool-item">AlphaFold</span>
+                    <span class="tool-item">Swiss-Model</span><span class="tool-item">STRING DB</span>
+                    <span class="tool-item">PyMOL</span><span class="tool-item">AutoDock Vina</span>
+                    <span class="tool-item">NCBI</span><span class="tool-item">BLAST</span>
+                </div>
+            </div>
+            <div class="skill-item-group">
+                <div class="skill-label-row"><span>Biological Databases</span><span class="percent-label">PDB / Gene Ontology</span></div>
+                <div class="tool-tag-list">
+                    <span class="tool-item">Protein Data Bank (PDB)</span><span class="tool-item">NCBI GenBank</span>
+                    <span class="tool-item">UniProtKB</span><span class="tool-item">Gene Ontology</span>
+                </div>
+            </div>
+            <div class="skill-item-group">
+                <div class="skill-label-row"><span>Programming</span></div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width:75%"></div></div>
+                <div class="skill-sub-tags">
+                    <span>Python (Data Analysis)</span><span>Basic C</span><span>Basic C++</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card skill-category-card">
+            <h3 class="category-name"><i data-lucide="flask-conical" class="category-icon"></i> Laboratory &amp; Data Analysis</h3>
+            <div class="skill-item-group">
+                <div class="skill-label-row"><span>Laboratory Knowledge</span></div>
+                <div class="tool-tag-list lab-list">
+                    <span class="lab-item"><i data-lucide="droplet" class="mini-icon"></i> DNA Isolation</span>
+                    <span class="lab-item"><i data-lucide="test-tube" class="mini-icon"></i> PCR Fundamentals</span>
+                    <span class="lab-item"><i data-lucide="columns-4" class="mini-icon"></i> Gel Electrophoresis</span>
+                    <span class="lab-item"><i data-lucide="shield-alert" class="mini-icon"></i> Cell Culture Basics</span>
+                    <span class="lab-item"><i data-lucide="cookie" class="mini-icon"></i> Microbial Techniques</span>
+                    <span class="lab-item"><i data-lucide="combine" class="mini-icon"></i> Biochemical Assays</span>
+                </div>
+            </div>
+            <div class="skill-item-group">
+                <div class="skill-label-row"><span>Data Analysis &amp; Documentation</span></div>
+                <div class="tool-tag-list">
+                    <span class="tool-item">Microsoft Excel</span><span class="tool-item">Statistical Analysis</span>
+                    <span class="tool-item">Scientific Documentation</span><span class="tool-item">Research Report Writing</span>
+                </div>
+            </div>
+            <div class="coursework-box">
+                <h4>Relevant Coursework Include:</h4>
+                <div class="coursework-grid">
+                    <span>Cell Biology</span><span>Molecular Biology</span><span>Genetics</span>
+                    <span>Biochemistry</span><span>Bioinformatics</span><span>Biotech Principles</span>
+                    <span>Microbiology</span><span>Genetic Engineering</span><span>Biostatistics</span>
+                    <span>Computational Bio</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Achievements -->
+<article id="achievements" class="content-section">
+    <h2 class="section-title pad-left"><i data-lucide="trophy"></i> Activities &amp; Credentials</h2>
+    <div class="achievements-container">
+        <div class="glass-card achievements-card">
+            <h3 class="block-subtitle"><i data-lucide="star"></i> Achievements &amp; Activities</h3>
+            <ul class="achievement-list">
+                <li><span class="bullet-glow"></span><p>Active student member of the Biotechnology department at <strong>NIET</strong>.</p></li>
+                <li><span class="bullet-glow"></span><p>Participated in specialized <strong>bioinformatics</strong> and biotechnology workshops.</p></li>
+                <li><span class="bullet-glow"></span><p>Developed custom molecular docking protocols and workflows using <strong>AutoDock Vina</strong>.</p></li>
+                <li><span class="bullet-glow"></span><p>Completed hands-on structural predictions and alignments using <strong>AlphaFold</strong> and <strong>Swiss-Model</strong> pipelines.</p></li>
+                <li><span class="bullet-glow"></span><p>Actively engaged in biotechnology research and design innovations.</p></li>
+                <li><span class="bullet-glow"></span><p>Dedicated to learning advanced computer science concepts like machine learning and python automation for biological systems.</p></li>
+            </ul>
+        </div>
+
+        <div class="glass-card certifications-card">
+            <h3 class="block-subtitle"><i data-lucide="shield-check"></i> Professional Certifications</h3>
+            <div class="cert-grid">
+                <a class="cert-item" href="#" aria-label="Bioinformatics Fundamentals certification">
+                    <div class="cert-icon-box"><i data-lucide="award"></i></div>
+                    <div class="cert-details"><h4>Bioinformatics Fundamentals</h4><p>Computational biology methods and sequence databases.</p></div>
+                </a>
+                <a class="cert-item" href="#" aria-label="Introduction to Biotechnology certification">
+                    <div class="cert-icon-box"><i data-lucide="award"></i></div>
+                    <div class="cert-details"><h4>Introduction to Biotechnology</h4><p>Fundamental principles, laboratory rules, and protocols.</p></div>
+                </a>
+                <a class="cert-item" href="#" aria-label="Python for Data Analysis certification">
+                    <div class="cert-icon-box"><i data-lucide="award"></i></div>
+                    <div class="cert-details"><h4>Python for Data Analysis</h4><p>Data cleaning, visualization, and scripting with pandas/numpy.</p></div>
+                </a>
+                <a class="cert-item" href="#" aria-label="AI Applications in Biotechnology certification">
+                    <div class="cert-icon-box"><i data-lucide="award"></i></div>
+                    <div class="cert-details"><h4>AI Applications in Biotechnology</h4><p>Overview of machine learning models applied to genomic data.</p></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+
+</div>
+</section>
+</main>
+
+<button id="back-to-top" class="back-to-top hidden" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
